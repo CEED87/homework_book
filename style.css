@@ -1,0 +1,37 @@
+.form-book  {
+    display: flex;
+    margin-top: 20px;
+}
+
+label {
+    color: rgb(44, 100, 102);
+}
+input:not([type="button"]) {
+    display: block;
+    width: 65%;
+    padding-top: 40px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: solid 1px;
+    border-color: cadetblue;
+    outline:none;
+    font-size: 20px;
+}
+
+.book  {
+    flex-grow: 1;
+}
+
+.info {
+    flex-grow: 1;
+    text-align: center;
+    color: rgb(7, 7, 190);
+}
+span {
+    display: block;
+    color: rgb(0, 0, 0);
+    margin-top: 5px;
+}
+.btn {
+    margin-top: 5px;
+}
