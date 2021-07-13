@@ -35,12 +35,12 @@ class TravelBook extends Book {
         return `Название: ${this._name}, автор: ${this._author}, количество страниц: ${this._pages}.`;
     }
 
-    deleteBook(bbb) {
-       if (bbb.id === this._id) {
-           delete bbb;
-       };
+    // deleteBook(bbb) {
+    //    if (bbb.id === this._id) {
+    //        delete bbb;
+    //    };
 
-    }
+    // }
 
 }
 
