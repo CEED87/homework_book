@@ -2,56 +2,77 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Books</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/materialize.min.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div class="form-book">
-        <div class="book">
-            <form action="">
-                 <label for="">Название</label>
-                 <input type="text" name="" id="">
-                 <label for="">Автор</label>
-                 <input type="text" name="" id="">
-                 <label for="">Количество страниц</label>
-                 <input type="text" name="" id="">
-                 <label for="">Тип обложки</label>
-                 <input type="text" name="" id=""> 
-                 <input type="button" value="Добавить книгу">
+
+    <div class="container">
+        <div class="row">
+            <div>
+                <form id="books-travel" class="col s5">
+                    <div >
+                        <label for="title">Название</label>
+                        <input type="text" id="title">
+                    </div>
+                    <div>
+                        <label for="author">Автор</label>
+                        <input type="text" id="author">
+                    </div>
+                    <div>
+                        <label for="count">Количество страниц</label>
+                        <input type="text" id="count">
+                    </div>
+                    <div>
+                        <label for="type-wrapper">Тип обложки</label>
+                        <input type="text" id="type-wrapper">
+                    </div>
+                    <div>
+                        <input type="submit" value="Добавить книгу">
+                    </div>
+                </form>
+        </div>
+        <div>
+            <form id="books-comics" class="col s5 offset-s2">
+                <div >
+                    <label for="title-c">Название</label>
+                    <input type="text" id="title-c">
+                </div>
+                <div>
+                    <label for="author-c">Автор</label>
+                    <input type="text" id="author-c">
+                </div>
+                <div>
+                    <label for="count-c">Количество страниц</label>
+                    <input type="text" id="count-c">
+                </div>
+                <div>
+                    <label for="number-count">Номер выпуска</label>
+                    <input type="text" id="number-count">
+                </div>
+                <div>
+                    <input type="submit" value="Добавить книгу">
+                </div>
             </form>
         </div>
-         <div class="book">
-             <form action="">
-                 <label for="">Название</label>
-                 <input type="text" name="" id="">
-                 <label for="">Автор</label>
-                 <input type="text" name="" id="">
-                 <label for="">Количество страниц</label>
-                 <input type="text" name="" id="">
-                 <label for="">Hомер выпуска</label>
-                 <input type="text" name="" id=""> 
-                 <input type="button" value="Добавить книгу">
-             </form>
-        </div>
     </div>
-    <div class="form-book">
-        <div class="info">Название книги  </div>
-        <div class="info">Автор книги</div>
-        <div class="info">Действие
-            <div class="btn">
-                <input type="button" value="удалить">
-                <input type="button" value="подробнее">
-            </div>
+        <ol id="list-books">
+            <ul class="head_list">
+                <li>Название книги</li>
+                <li>Автор книги</li>
+                <li>Действие</li>
+            </ul>
+            <!-- <ul>
+                <li>Книга 1</li>
+                <li>Автор 1</li>
+                <li><button class="delete">удалить</button> <button class="info">подробнее</button></li>
+            </ul> -->
             
-        </div>
+        </ol>
     </div>
-   
     
-
-
-
-    <script src="script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>

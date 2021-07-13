@@ -1,0 +1,8 @@
+.head_list, ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.head_list li{
+    color: blue;
+}
